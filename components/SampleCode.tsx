@@ -39,16 +39,26 @@ interface LanguageText {
 const sampleCodes: CodeSample[] = [
   {
     name: 'account',
-    code: `<PrexMyAccount />`
+    code: `const AccountComponent = () => {
+  const { wallet } = usePrex()
+
+  return (<>{wallet.address}</>)
+}`
   },
   {
     name: 'transfer',
-    code: `<PrexTransfer
-  token='0x00' amount={1n} to={'0x00'}>
-  <button className='p-3 w-40 rounded bg-blue-500 hover:bg-blue-400 text-white shadow font-bold'>
+    code: `const TransferComponent = () => {
+  const { transfer } = usePrex()
+  const onTransfer = async () => {
+    await transfer('0x00', 1n, '0x00')
+  }
+
+  return (<button
+    className='p-3 w-40 rounded bg-blue-500 hover:bg-blue-400 text-white shadow font-bold'
+    onClick={onTransfer}>
     送付する
-  </button>
-</PrexTransfer>`,
+  </button>)
+}`,
     preview: ({ onTransferComplete }: { onTransferComplete: () => void }) => (
       <div className="flex items-center space-x-4">
         <Tooltip content="クリックすると送付が完了します">
@@ -65,19 +75,34 @@ const sampleCodes: CodeSample[] = [
   },
   {
     name: 'transfer2D',
-    code: `<PrexLinkTransfer
-  token='0x00'
-  amount={1n}
-  baseURL='http://localhost:3000'
-  expiration={100000}>
-  <button className='p-3 w-40 rounded bg-blue-500 hover:bg-blue-400 text-white shadow'>
-    送付リンクを作る
-  </button>
-</PrexLinkTransfer>`
+    code: `const TransferComponent = () => {
+  const { transferByLink } = usePrex()
+  const onTransfer = async () => {
+    const {id, secret} = await transferByLink('0x00', 1n)
+    const url = \`\${window.location.origin}/receive?id=\${id}&secret=\${secret}\`
+  }
+
+  return (<button
+    className='p-3 w-40 rounded bg-blue-500 hover:bg-blue-400 text-white shadow font-bold'
+    onClick={onTransfer}>
+    送付する
+  </button>)
+}`
   },
   {
     name: 'receive',
-    code: `<PrexReceiveView id={''} secret={''} />`
+    code: `const ReceiveComponent = ({ id, secret }) => {
+  const { receiveLinkTransfer } = usePrex()
+  const onReceive = async () => {
+    await receiveLinkTransfer(id, secret)
+  }
+
+  return (<button
+    className='p-3 w-40 rounded bg-blue-500 hover:bg-blue-400 text-white shadow font-bold'
+    onClick={onReceive}>
+    受け取る
+  </button>)
+}`
   }
 ];
 
