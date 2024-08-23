@@ -14,7 +14,7 @@ const ClientsAndTemplates: React.FC<ClientsAndTemplatesProps> = ({ id }) => {
   const clientsAndTemplates = [
     {
       name: 'awabar',
-      description: 'Template 1 description',
+      description: 'Drink ticket',
       imageUrl: '/client1.png',
       xUrl: 'https://x.com/awabar_Fukuoka',
       githubUrl: '#',
@@ -40,7 +40,7 @@ const ClientsAndTemplates: React.FC<ClientsAndTemplatesProps> = ({ id }) => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">{text.clientsAndTemplates.title}</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl whitespace-pre-line">
             {text.clientsAndTemplates.description}
           </p>
         </div>
@@ -56,7 +56,7 @@ const ClientsAndTemplates: React.FC<ClientsAndTemplatesProps> = ({ id }) => {
                 />
               </div>
               <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{item.name}</h3>
-              <p className="mt-2 text-base leading-7 text-gray-600">{item.description}</p>
+              <p className="mt-2 text-base leading-7 text-gray-600 whitespace-pre-line">{item.description}</p>
               <ul className="mt-6 flex gap-x-6">
                 <li>
                   <a href={item.xUrl} className="text-gray-400 hover:text-gray-500" target="_blank" rel="noopener noreferrer">

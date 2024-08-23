@@ -15,7 +15,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ id }) => {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">{text.features.title}</h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl whitespace-pre-line">
             {text.features.description}
           </p>
         </div>
@@ -30,7 +30,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({ id }) => {
                   {feature.title}
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">{feature.description}</p>
+                  <p className="flex-auto whitespace-pre-line">{feature.description}</p>
                 </dd>
               </div>
             ))}
