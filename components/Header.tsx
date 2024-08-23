@@ -47,7 +47,7 @@ const Header: React.FC = () => {
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Product
+              {text.header.product}
               <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
             </Popover.Button>
 
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
           </Popover>
 
           <a href="https://docs.prex0.com/docs/" className="text-sm font-semibold leading-6 text-gray-900">
-            Docs
+            {text.header.docs}
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
@@ -116,7 +116,7 @@ const Header: React.FC = () => {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                        Product
+                        {text.header.product}
                         <ChevronDownIcon
                           className={`h-5 w-5 flex-none ${open ? 'rotate-180 transform' : ''}`}
                           aria-hidden="true"
@@ -143,7 +143,7 @@ const Header: React.FC = () => {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Docs
+                  {text.header.docs}
                 </a>
               </div>
               <div className="py-6">
