@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Prex: Embed a Wallet in Your Website",
   description: "Prex is smart wallet as a service that you can embed in your website.",
   icons: {
-    icon: '/favicon.png', // ここにファビコンのパスを追加
+    icon: '/icon.png'
   },
 };
 
