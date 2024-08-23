@@ -1,11 +1,13 @@
 export const JA_TEXT = {
-    header: {
-      features: "機能",
-      sample: "サンプル",
-      templates: "テンプレート",
-      price: "価格",
-      login: "ログイン"
-    },
+  header: {
+    product: "プロダクト",
+    docs: "ドキュメント",
+    features: "特徴",
+    sample: "サンプル",
+    templates: "導入事例",
+    price: "価格",
+    login: "ログイン"
+  },
     hero: {
         title: "Websiteに\nWalletを組み込もう",
         subTitle: "Prex: 埋め込み型Blockchain Walletソリューション",
@@ -19,7 +21,7 @@ export const JA_TEXT = {
       },
       features: {
         title: "Prexの主な特長",
-        description: "フロントエンド開発に集中。\nバックエンドとBlockchain関連はPrexにお任せ。",
+        description: "フロントエンド開発に集中\nバックエンドはPrexにお任せ",
         items: [
           {
             title: "開発効率化",
@@ -49,8 +51,8 @@ export const JA_TEXT = {
         transferCompleteAlt: "送金完了",
       },
       clientsAndTemplates: {
-        title: "クライアントとテンプレート",
-        description: "当社の多様なクライアントとそれぞれに作成したカスタムテンプレートをご覧ください。",
+        title: "導入事例",
+        description: "クライアントとそれぞれのテンプレートをご覧ください。",
         comingSoon: "近日公開",
         comingSoonDescription: "こちらに次の興味深いクライアントが掲載される予定です。",
         comingSoonDescription2: "今後のコラボレーションにご期待ください。",

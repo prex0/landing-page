@@ -33,12 +33,12 @@ const HeroSection: React.FC = () => {
           </ul>
           <div className="mt-10 flex items-center gap-x-6">
             <a
-              href="#"
+              href="https://dev-dashboard.prex0.com/"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               {text.hero.cta}
             </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <a href="https://docs.prex0.com/docs/" className="text-sm font-semibold leading-6 text-gray-900">
               {text.hero.learnMore} <span aria-hidden="true">→</span>
             </a>
           </div>

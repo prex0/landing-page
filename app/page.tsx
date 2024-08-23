@@ -1,7 +1,7 @@
 import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
 import FeatureSection from '../components/FeatureSection'
-import SampleCode from '../components/SampleCode'
+// import SampleCode from '../components/SampleCode'
 import ClientsAndTemplates from '../components/ClientsAndTemplates'
 import PriceSection from '../components/PriceSection'
 import Footer from '../components/Footer'
@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <FeatureSection id="features" />
-      <SampleCode id="sample" />
+      {/* <SampleCode id="sample" /> */}
       <ClientsAndTemplates id="templates" />
       <PriceSection id="price" />
       <Footer />

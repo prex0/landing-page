@@ -1,11 +1,13 @@
 export const EN_TEXT = {
-    header: {
-      features: "Features",
-      sample: "Sample",
-      templates: "Templates",
-      price: "Price",
-      login: "Log in"
-    },
+  header: {
+    product: "Product",
+    docs: "Docs",
+    features: "Features",
+    sample: "Sample",
+    templates: "Templates",
+    price: "Price",
+    login: "Log in"
+  },
     hero: {
         title: "Embed a Wallet\nin Your Website",
         subTitle: "Prex: Embedded Blockchain Wallet Solution",
@@ -66,7 +68,7 @@ export const EN_TEXT = {
         feature4: "24/7 customer support",
         pricingModel: "Monthly subscription",
         perMonth: "USD/month",   
-        ctaButton: "Credit Card Payment (Coming Soon)",
+        ctaButton: "Credit Card Payment <br> (Coming Soon)",
         additionalInfo: "Invoices and receipts available for easy company reimbursement",
     },
     footer: {
