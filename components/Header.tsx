@@ -79,7 +79,7 @@ const Header: React.FC = () => {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4">
           <LanguageSwitcher />
           <a
-            href="https://dev-dashboard.prex0.com/"
+            href="https://dashboard.prex0.com/"
             className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             {text.header.login}
